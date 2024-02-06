@@ -25,10 +25,3 @@ CREATE TABLE `unconfirm` (
   `time` varchar(10) NOT NULL,
   `place` varchar(30) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
--- 
--- dump ตาราง `unconfirm`
--- 
-
-INSERT INTO `unconfirm` VALUES (1, '2553-11-06', '11.00', 'asd');
-INSERT INTO `unconfirm` VALUES (8, '2553-11-06', '11.00', 'asd');
