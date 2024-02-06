@@ -27,14 +27,6 @@ CREATE TABLE `committee` (
   `country` varchar(30) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- 
--- Dumping data for table `committee`
--- 
-
-INSERT INTO `committee` VALUES (1, 1, '', '', '');
-INSERT INTO `committee` VALUES (2, 1, '', '', '');
-INSERT INTO `committee` VALUES (3, NULL, '', NULL, NULL);
-
 -- --------------------------------------------------------
 
 -- 
@@ -58,14 +50,6 @@ CREATE TABLE `contactinfo` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- 
--- Dumping data for table `contactinfo`
--- 
-
-INSERT INTO `contactinfo` VALUES (3, '1', 1, '-', '-', 'น้ำบ่อ', 'น้ำคลอง', 'น่าน', '12345', '0843182999', '055123456', 'qwertyui@mail.com', '191');
-INSERT INTO `contactinfo` VALUES (1, '1', 1, '-', '-', 'น้ำบ่อ', 'น้ำคลอง', 'น่าน', '12345', '0843182999', '055123456', 'qwertyui@mail.com', '191');
-INSERT INTO `contactinfo` VALUES (2, '1', 1, '-', '-', 'น้ำบ่อ', 'น้ำคลอง', 'น่าน', '12345', '0843182999', '055123456', 'qwertyui@mail.com', '191');
-
 -- --------------------------------------------------------
 
 -- 
@@ -78,16 +62,6 @@ CREATE TABLE `langskill` (
   `level` varchar(6) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- 
--- Dumping data for table `langskill`
--- 
-
-INSERT INTO `langskill` VALUES (3, 'ไทย', 'ดีมาก');
-INSERT INTO `langskill` VALUES (3, 'อังกฤษ', 'ดี');
-INSERT INTO `langskill` VALUES (2, 'ไทย', 'ดีมาก');
-INSERT INTO `langskill` VALUES (2, 'อังกฤษ', 'ดี');
-INSERT INTO `langskill` VALUES (1, 'ไทย', 'ดีมาก');
-INSERT INTO `langskill` VALUES (1, 'อังกฤษ', 'ดี');
 
 -- --------------------------------------------------------
 
@@ -113,15 +87,6 @@ CREATE TABLE `personalinfo` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- 
--- Dumping data for table `personalinfo`
--- 
-
-INSERT INTO `personalinfo` VALUES (3, 'ธิติชน', 'ชัยพินิจ', 'Thitichon', 'Chaipinij', 'ชาย', 30, '2535-02-10', 'วิศวกรรมศาสตร์', 'คอมพิวเตอร์', 4, 'มหาวิทยาลัยเชียงใหม่', 'พุทธ', 'ปริญญาตรี');
-INSERT INTO `personalinfo` VALUES (0, '', '', '', '', '', 0, '0000-00-00', '', '', 0, '', '', '');
-INSERT INTO `personalinfo` VALUES (1, 'ธิติชน', 'ชัยพินิจ', 'Thitichon', 'Chaipinij', 'ชาย', 30, '2535-02-10', 'วิศวกรรมศาสตร์', 'คอมพิวเตอร์', 4, 'มหาวิทยาลัยเชียงใหม่', 'พุทธ', 'ปริญญาตรี');
-INSERT INTO `personalinfo` VALUES (2, 'ธิติชน', 'ชัยพินิจ', 'Thitichon', 'Chaipinij', 'ชาย', 30, '2535-02-10', 'วิศวกรรมศาสตร์', 'คอมพิวเตอร์', 4, 'มหาวิทยาลัยเชียงใหม่', 'พุทธ', 'ปริญญาตรี');
-
 -- --------------------------------------------------------
 
 -- 
@@ -138,12 +103,6 @@ CREATE TABLE `sport` (
   `3rdsport` varchar(30) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- 
--- Dumping data for table `sport`
--- 
-
-INSERT INTO `sport` VALUES (3, 'Thailand', 'Sepak Takraw (Men)', 'Thailand', 'Taekwondo', 'Philippines', 'Badminton');
-INSERT INTO `sport` VALUES (1, 'Lao PDR', 'Taekwondo', 'Lao PDR', 'Beach Volleyball', 'Indonesia', 'Sepak Takraw (Men)');
 
 -- --------------------------------------------------------
 
@@ -158,11 +117,3 @@ CREATE TABLE `wantstaff` (
   `third` varchar(30) NOT NULL,
   `sport` tinyint(1) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
--- 
--- Dumping data for table `wantstaff`
--- 
-
-INSERT INTO `wantstaff` VALUES (1, 'ประจำสนามบินเชียงใหม่', 'ประจำกีฬา', 'ประสานงานทั่วไป', 1);
-INSERT INTO `wantstaff` VALUES (2, 'ประจำสนามบินเชียงใหม่', 'รับรองแขก VIP', 'รับรองแขก VIP', 0);
-INSERT INTO `wantstaff` VALUES (3, 'ประจำกีฬา', 'รับรองแขก VIP', 'ประสานงานทั่วไป', 1);
